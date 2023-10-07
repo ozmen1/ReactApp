@@ -16,8 +16,6 @@ export default class CategoryList extends Component {
     .then(data => this.setState({categories:data}));
   }
 
-
-
   render() {
     return (
       <div>
