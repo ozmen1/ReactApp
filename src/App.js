@@ -1,17 +1,26 @@
+import { Container, Row, Col } from "reactstrap";
+import CategoryList from "./CategoryList";
+import Navi from "./Navi";
+import ProductList from "./ProductList";
+import 'bootstrap/dist/css/bootstrap.css';
+
+
 function App() {
-  const title = "User App";
-  const isAuthorized = true;
-
   return (
-    <div className="container">
-      <h5>{title}</h5>
-      <label htmlFor="name">Name</label>
-      
-      {
-        isAuthorized ? <p>Authorized</p> : <p>Not Authorized</p>
-      }
-
-      <p className="lead">This is a sample text</p>
+    <div>
+      <Container>
+        <Row>
+          <Navi />
+        </Row>
+        <Row>
+          <Col xs="3">
+            <CategoryList title="Category List"/>
+          </Col>
+          <Col xs="9">
+            <ProductList title="Product List"/>
+          </Col>
+        </Row>
+      </Container>
     </div>
   );
 }
