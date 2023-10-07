@@ -6,6 +6,8 @@ import 'bootstrap/dist/css/bootstrap.css';
 
 
 function App() {
+  let productInfo = {title: "Product List", baskaBisey: "Example"}
+  let categoryInfo = {title: "Category List"}
   return (
     <div>
       <Container>
@@ -14,10 +16,10 @@ function App() {
         </Row>
         <Row>
           <Col xs="3">
-            <CategoryList title="Category List"/>
+            <CategoryList info={categoryInfo}/>
           </Col>
           <Col xs="9">
-            <ProductList title="Product List"/>
+            <ProductList info={productInfo}/>
           </Col>
         </Row>
       </Container>
