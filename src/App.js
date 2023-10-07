@@ -14,7 +14,7 @@ export default class App extends Component {
   };
 
   render() {
-    let productInfo = { title: "Product List", baskaBisey: "Example" };
+    let productInfo = { title: "Product List"};
     let categoryInfo = { title: "Category List" };
     return (
       <div>
